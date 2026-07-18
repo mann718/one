@@ -451,7 +451,7 @@ section{min-height:78vh;min-height:78svh;display:flex;flex-direction:column;
 const DEFAULT_CONFIG = {
   HER_NAME:  "you",
   YOUR_NAME: "me",
-  START_DATE: "2024-01-01T00:00:00",
+  START_DATE: "2025-07-18T17:30:00",
   PHOTOS: [
     { src:"", caption:"where it began" },
     { src:"", caption:"my favourite laugh" },
@@ -781,7 +781,7 @@ $('#scratchMsg').textContent = CONFIG.SCRATCH_SECRET;
     grid.appendChild(d);
     return d.querySelector('.cnum');
   });
-  const start = new Date(CONFIG.START_DATE);
+  const start = new Date(DEFAULT_CONFIG.START_DATE);
   let prev = [];
   function tick(){
     const now = new Date();
